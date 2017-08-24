@@ -2,7 +2,7 @@
 A training project of Clearning openmap data
 
 ## Purpose of Project
-Auditing the openmap data in tsv formmat, cleaning data with error input or ununified formmating, and write to SQL database.
+Auditing the openmap data in osm formmat, cleaning data with error input or ununified formmating, and write to SQL database.
 
 ## Steps
 ### audit.py
@@ -29,23 +29,23 @@ Inspect tags with address key.
 
 ## Problems founded
 ### Problems in tag keys:
-*1	Space in key( k="name:中文 Jade Court" )     
-*2  Ununified language code for name keys (name:zht, name:zh-tradiction, name:zh_classical)    
+* 1	Space in key( k="name:中文 Jade Court" )     
+* 2  Ununified language code for name keys (name:zht, name:zh-tradiction, name:zh_classical)    
 ### Problems in tag values:
-*3 Strings in numeric values (1, 1 level, 1层, 底层; 1234 and 1,234)    
-*4 Number in logical values (yes, no, 1)    
-*5 Wrong start date (“2027”)    
-*6 Wrong format of postcode (SL 202, 0000)    
-*7 Ununified format of phone and fax (“020 2222 2222”, “+86 20 2222 2222”)   
-*8 Abbreviation in street name(“Rd.”)    
+* 3 Strings in numeric values (1, 1 level, 1层, 底层; 1234 and 1,234)    
+* 4 Number in logical values (yes, no, 1)    
+* 5 Wrong start date (“2027”)    
+* 6 Wrong format of postcode (SL 202, 0000)    
+* 7 Ununified format of phone and fax (“020 2222 2222”, “+86 20 2222 2222”)   
+* 8 Abbreviation in street name(“Rd.”)    
 
 ## Soluction and database
 ### solutions.py
 Different solution for types of problems.
 
 ## Reference
-(1)Hongkong characters set: 
+* 1 Hongkong characters set: 
 https://www.ogcio.gov.hk/en/business/tech_promotion/ccli/hkscs/2008_summay.htm     
-(2)ISO-639 standard: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes, http://www-01.sil.org/iso639-3/codes.asp 
+* 2 ISO-639 standard: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes, http://www-01.sil.org/iso639-3/codes.asp 
 
 
